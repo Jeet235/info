@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Information Portale</title>
+<script>
+    fuction convertToUppercase(input) {
+        input.value = input.value.toUppercase();
+    }
+</script>
+</head>
+<body align="center">
+<form>
+    <div class="input-box">
+        <span class="textInput">First Name</span><br>
+        <input type="text" placeholder="Enter your First Name" required>
+    </div><br>
+    <div class="input-box">
+        <span class="textInput">Middle Name</span><br>
+        <input type="text" placeholder="Enter Middle Name" required>
+    </div><br>
+    <div class="input-box">
+        <span class="textInput">Last Name</span><br>
+        <input type="text" placeholder="Enter Last Name" required>
+    </div><br><br>
+<lable for="state">State</lable>
+<select id="state" name="state">
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Goa">Goa</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Gujrat">Gujrat</option>
+    <option value="Madhya pradesh">Madhya pradesh</option>
+</select><br><br>
+<label for="date">Enter your Date of birth</label><br>
+<input type="date" name="t1"><br><br>
+
+<div class="input-box">
+    <span class="textInput">Pan Card</span><br>
+    <input type="text" id="textInput" name="textInput" oninput="convertToUppercase(this)" placeholder="Enter Pancard no" required maxlength="10">
+</div><br>
+
+<div class="input-box">
+    <span class="textInput">Aadhar Card</span><br>
+    <input type="text" placeholder="Enter Aadhar Card no" required maxlength="12">
+</div><br>
+<div class="input-box">
+    <span class="textInput">Phonenumber</span><br>
+    <input type="text" placeholder="Enter your Phoneno" required maxlength="10"></div><br>
+
+<div class="input-box">
+    <span class="textInput">E-mail</span><br>
+    <input type="text" placeholder="Enter your E-mail" required>
+</div><br>
+
+<div class="input-box">
+    <span class="textInput">Password</span><br>
+<input type="password" placeholder="Enter Password" maxlength="8">
+</div>
+
+<button>submit</button>
+</form>
+</body>
+</html>
